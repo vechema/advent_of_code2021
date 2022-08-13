@@ -4,6 +4,7 @@ require_relative '../day'
 class Day01 < Day
   def initialize
     super(folder: __dir__)
+    @input = @input.map(&:to_i)
   end
 
   def num_increases(array:)

@@ -10,7 +10,7 @@ class Day
   end
 
   def initialize(folder:)
-    @input = File.readlines("#{folder}/input", chomp: true).flat_map(&:lines).map(&:to_i)
+    @input = File.readlines("#{folder}/input", chomp: true).flat_map(&:lines)
   end
 
   def display
